@@ -35,8 +35,15 @@ margin-right: 43%;
 
   }
 
-nav{
-    background-color:#333 ;
+  .close{
+    z-index: 10;
+    margin-top: 15%;
+  }
+  .close p{
+    color: orangered;
+  }
+.nav{
+    background-color:orangered;
     left: -250px;
     width: 250px;
     height: 100vh;
@@ -46,21 +53,21 @@ nav{
     transition:  all .5s ease;
   }
   
-  nav a{
+  .nav a{
     display: block;
     padding: 20px 0;
     color: #fff;
     font-size: 15px;
   }
   
-  nav a:hover{
+  .nav a:hover{
     color: #333;
     background-color: #fff;
     font-weight: bold;
     border-right: 2px solid #ffffff;
   }
   
-  nav .fa{
+  .nav .fa{
     display: inline-block;
   }
   
@@ -73,19 +80,19 @@ nav{
   }
   
   label #openbtn, label #closebtn{
-    position: absolute;
     cursor: pointer;
   }
   
   
   label #closebtn{
+  position: absolute;
   z-index: 1111;
   top: 20px;
   left: -212px;
   font-size: 30px;
   }
   
-  #icon:checked ~ nav{
+  #icon:checked ~ .nav{
     left:0;
   }
   
