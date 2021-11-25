@@ -20,11 +20,13 @@
               font-size: 30px;
               align-items: center;
               justify-content: space-between;
+              color: orangered !important;
           }
           header h1 {
-              color: orangered;
               text-align: center;
+              color: orangered !important;
           }
+
           .bigmac {
               z-index: 10;
               display: flex;
@@ -50,8 +52,8 @@
           }
           nav {
               background-color:rgb(25, 25, 25);
-              margin-left: -250px;
-              width: 250px;
+              margin-left: -20%;
+              width: 20%;
               overflow: hidden;
               text-align: center;
               padding-top: 30px;
@@ -112,7 +114,7 @@
                 width: 35px;
             }
 
-          @media only screen and (max-width: 600px) {
+          @media only screen and (max-width: 700px) {
               #icon:checked ~ main nav {
                   width: 100vw;
               }
@@ -121,7 +123,7 @@
               }
           }
        
-          
+
 #content
 {
 width: 100vw;
@@ -129,13 +131,51 @@ width: 100vw;
 .content
 {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
   align-items: center;
   justify-content: space-evenly;
 }
 .content img
 {
-
   width: 15vw; 
  height: auto;
+}
+.content img:hover
+{
+  transform: scale(1.2);
+  transition:  all .5s ease;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .content
+  {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .content img
+{
+
+  width: 20vw; 
+ height: auto;
+}
+
+}
+@media only screen and (max-width: 800px) {
+  .content
+  {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .content img
+{
+
+  width: 30vw; 
+ height: auto;
+}
 }
